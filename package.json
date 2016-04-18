@@ -1,0 +1,25 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "npm how to hllo wolrd",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "dist"
+  ],
+  "author": "Alberto Colom",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acolom/npm-how-to.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acolom/npm-how-to/issues"
+  },
+  "homepage": "https://github.com/acolom/npm-how-to#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
