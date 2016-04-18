@@ -1,6 +1,6 @@
 {
   "name": "hello_world",
-  "version": "1.0.0",
+	  "version": "1.0.5",
   "description": "npm how to hllo wolrd",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,6 @@
   "homepage": "https://github.com/acolom/npm-how-to#readme",
   "dependencies": {
     "@linclark/pkg": "^1.0.2"
-  }
+  },
+  "devDependencies": {}
 }

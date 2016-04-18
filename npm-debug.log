@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v4.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/npm_how_to',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/hello_world/1.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle hello_world@1.0.5~prepublish: hello_world@1.0.5
+11 silly lifecycle hello_world@1.0.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/hello_world/1.0.5/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/npm_how_to' ]
+13 verbose tarball /home/ubuntu/.npm/hello_world/1.0.5/package.tgz
+14 verbose folder /home/ubuntu/workspace/npm_how_to
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/hello_world/1.0.5/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd hello_world@1.0.5
+18 verbose afterAdd /home/ubuntu/.npm/hello_world/1.0.5/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/hello_world/1.0.5/package/package.json written
+21 silly publish { name: 'hello_world',
+21 silly publish   version: '1.0.5',
+21 silly publish   description: 'npm how to hllo wolrd',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   keywords: [ 'dist' ],
+21 silly publish   author: { name: 'Alberto Colom' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/acolom/npm-how-to.git' },
+21 silly publish   bugs: { url: 'https://github.com/acolom/npm-how-to/issues' },
+21 silly publish   homepage: 'https://github.com/acolom/npm-how-to#readme',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   devDependencies: {},
+21 silly publish   readme: 'Hello world npm package!!\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'c3211e8ff3c2c683e5ef64c28c89e28cd53a475e',
+21 silly publish   _id: 'hello_world@1.0.5',
+21 silly publish   _shasum: 'f3650791edb020e31e251efc7905f661444591d0',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name hello_world
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://localhost:15443/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'hello_world',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'hello_world',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://localhost:15443/hello_world
+28 verbose publish registryBase http://localhost:15443/
+29 silly publish uploading /home/ubuntu/.npm/hello_world/1.0.5/package.tgz
+30 verbose request uri http://localhost:15443/hello_world
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:53:26 AM
+33 verbose request id 63dff117a0e6d01a
+34 http request PUT http://localhost:15443/hello_world
+35 http 404 http://localhost:15443/hello_world
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   date: 'Mon, 18 Apr 2016 09:53:26 GMT',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'content-length': '19' }
+37 verbose request invalidating /home/ubuntu/.npm/localhost_15443/hello_world on PUT
+38 error publish Failed PUT 404
+39 verbose stack Error: missing : hello_world
+39 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 404
+41 verbose pkgid hello_world
+42 verbose cwd /home/ubuntu/workspace/npm_how_to
+43 error Linux 4.2.0-c9
+44 error argv "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm" "publish"
+45 error node v4.4.0
+46 error npm  v3.8.6
+47 error code E404
+48 error 404 missing : hello_world
+49 error 404
+50 error 404 'hello_world' is not in the npm registry.
+51 error 404 You should bug the author to publish it (or use the name yourself!)
+52 error 404 Note that you can also install from a
+53 error 404 tarball, folder, http url, or git url.
+54 verbose exit [ 1, true ]
